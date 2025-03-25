@@ -1,0 +1,464 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/simulation/questa
+T_opt
+!s110 1742327594
+VBKK7>fD<P`_?N7;QPdPoc2
+04 14 4 work my_computer_tb fast 0
+=1-e4a8dff707cd-67d9cf2a-10d-2bdc
+R0
+!s12b OEM100
+!s124 OEM10U18 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vadder
+Z3 2C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/riscvsingle.sv
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1742327593
+!i10b 1
+!s100 mV4o]g?LScIld=jl^N`ET3
+IMl_m2BAM?Ko2AmN:TPz[=3
+S1
+R1
+Z6 w1742242843
+Z7 8C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/riscvsingle.sv
+Z8 FC:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/riscvsingle.sv
+!i122 1
+L0 320 5
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z11 !s108 1742327593.000000
+Z12 !s107 C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/riscvsingle.sv|
+Z13 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU|C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/riscvsingle.sv|
+!i113 0
+Z14 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z15 !s92 -sv -work work +incdir+C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+valu
+R3
+R4
+R5
+!i10b 1
+!s100 oXoN@7`go[GL:oPPAf>]I0
+I0]@<kF2]kch9elYVaGW223
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 360 31
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+valudec
+R3
+R4
+R5
+!i10b 1
+!s100 :FdXa3m4nUZ[:V?43Dlbe2
+IIA?68j60:cPF]:kNL1fc13
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 259 25
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vCEL_PROJECT
+2C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/cel_project.v
+R5
+!i10b 1
+!s100 K2?6lSIR]3SE@k_zHl=QX0
+IhkJk3:fV3@;d5R3;zi86:0
+R1
+Z16 w1742238775
+8C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/cel_project.v
+FC:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/cel_project.v
+!i122 0
+L0 1 38
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/cel_project.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU|C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/cel_project.v|
+!i113 0
+Z17 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z18 !s92 -vlog01compat -work work +incdir+C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@c@e@l_@p@r@o@j@e@c@t
+vcontroller
+R3
+R4
+R5
+!i10b 1
+!s100 8f78Iz89A[zFezbgaHXR83
+Im@?bFfDW1dnYmcend2zS`3
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 212 20
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vdatapath
+R3
+R4
+R5
+!i10b 1
+!s100 iR8ZQ=VI6J:J5aa[130=C0
+Ij3QlKN<oIk8W0[D[I:_4<3
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 285 33
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vdmem
+R3
+R4
+R5
+!i10b 1
+!s100 gcCQiK__EH<]2U8N:BH@P2
+IP_DbXSknUb:`z^80I8<kS3
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 144 31
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vextend
+R3
+R4
+R5
+!i10b 1
+!s100 0PahEKf;cU[Y9<3?9chK10
+IiOde;BaXdWHe2KfO22gN32
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 326 17
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vflopr
+R3
+R4
+R5
+!i10b 1
+!s100 VOPNeO<cL5[LSe=Og8;]I1
+I_GPdY@1:5LI`6DGd9E9OS3
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 176 9
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vimem
+R3
+R4
+R5
+!i10b 1
+!s100 hM3nGn]k?cZ98`B>5K5hO3
+IIgB>`Jz1d8HhWmGDE2ff[0
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 129 13
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vmaindec
+R3
+R4
+R5
+!i10b 1
+!s100 lFm>lOh[oS7?oOVWLb:iO2
+IM_[Sf1OGMHQoUz[[gdaC82
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 233 25
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vmux2
+R3
+R4
+R5
+!i10b 1
+!s100 5XcVK6U0_oQbNFMOJPU9f3
+I_K0j3e5QdJiY1XWg7XVB00
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 344 7
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vmux3
+R3
+R4
+R5
+!i10b 1
+!s100 :J0=MA;O34?]HnJTAB?2c2
+ICVnE[EaK<6^j7;`kfOJ262
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 352 7
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vmy_computer
+R3
+R4
+R5
+!i10b 1
+!s100 YX0b;LZMK?>HP9?5aLik`0
+IdZAfDf0f`59[h:9^DAPR93
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 83 21
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vmy_computer_tb
+2C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/my_computer_tb.v
+R5
+!i10b 1
+!s100 FDB4?d0@GWkS7n8OHie5X3
+I78YbcH5L4BfCdQQ<RH:G^0
+R1
+R16
+8C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/my_computer_tb.v
+FC:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/my_computer_tb.v
+!i122 2
+L0 3 21
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/my_computer_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU|C:/Users/benbt/Desktop/Comp_eng_lab_2/Final_Project/RISCV_CPU/my_computer_tb.v|
+!i113 0
+R17
+R18
+R2
+vregfile
+R3
+R4
+R5
+!i10b 1
+!s100 >3bhF_J?Gldg<NQGgXe`i2
+I0GV8<QW4ino8edEJ9^TnL2
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 109 19
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vriscvsingle
+R3
+R4
+R5
+!i10b 1
+!s100 _XMmgPj^9c0jaX3Rn;KY62
+IQlR5Kz>;?Z]_HA`Ii2]m82
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 190 21
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2

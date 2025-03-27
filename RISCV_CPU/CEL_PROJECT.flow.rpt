@@ -1,5 +1,5 @@
 Flow report for CEL_PROJECT
-Mon Mar 24 18:09:11 2025
+Thu Mar 27 15:38:44 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,21 +41,21 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 24 18:09:11 2025          ;
+; Flow Status                        ; Successful - Thu Mar 27 15:38:44 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; CEL_PROJECT                                    ;
 ; Top-level Entity Name              ; CEL_PROJECT                                    ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C7G                                 ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 1,474 / 49,760 ( 3 % )                         ;
-;     Total combinational functions  ; 1,204 / 49,760 ( 2 % )                         ;
-;     Dedicated logic registers      ; 928 / 49,760 ( 2 % )                           ;
-; Total registers                    ; 928                                            ;
+; Total logic elements               ; 1,812 / 49,760 ( 4 % )                         ;
+;     Total combinational functions  ; 1,518 / 49,760 ( 3 % )                         ;
+;     Dedicated logic registers      ; 1,123 / 49,760 ( 2 % )                         ;
+; Total registers                    ; 1123                                           ;
 ; Total pins                         ; 109 / 360 ( 30 % )                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                          ;
-; Embedded Multiplier 9-bit elements ; 6 / 288 ( 2 % )                                ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                                ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                  ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                                  ;
 ; ADC blocks                         ; 0 / 2 ( 0 % )                                  ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/24/2025 18:08:41 ;
+; Start date & time ; 03/27/2025 15:38:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CEL_PROJECT         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 251413963147213.174285412105908        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 251413963147213.174310428702412        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; my_computer_tb                    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -107,12 +107,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4796 MB             ; 00:00:16                           ;
-; Fitter               ; 00:00:08     ; 1.4                     ; 5951 MB             ; 00:00:14                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4723 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.7                     ; 4892 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4649 MB             ; 00:00:00                           ;
-; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:35                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4796 MB             ; 00:00:19                           ;
+; Fitter               ; 00:00:10     ; 1.4                     ; 5952 MB             ; 00:00:17                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4731 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.8                     ; 4898 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4650 MB             ; 00:00:01                           ;
+; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:43                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

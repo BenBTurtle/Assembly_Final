@@ -1,5 +1,5 @@
 Timing Analyzer report for CEL_PROJECT
-Mon Mar 24 18:09:09 2025
+Thu Mar 27 15:38:42 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -92,12 +92,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.73        ;
+; Average used               ; 1.85        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;  10.4%      ;
+;     Processors 2-8         ;  12.1%      ;
 +----------------------------+-------------+
 
 
@@ -106,7 +106,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------+--------+--------------------------+
 ; SDC File Path   ; Status ; Read at                  ;
 +-----------------+--------+--------------------------+
-; CEL_PROJECT.SDC ; OK     ; Mon Mar 24 18:09:07 2025 ;
+; CEL_PROJECT.SDC ; OK     ; Thu Mar 27 15:38:40 2025 ;
 +-----------------+--------+--------------------------+
 
 
@@ -868,7 +868,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Mar 24 18:09:07 2025
+    Info: Processing started: Thu Mar 27 15:38:39 2025
 Info: Command: quartus_sta CEL_PROJECT -c CEL_PROJECT
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -878,7 +878,7 @@ Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'CEL_PROJECT.SDC'
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Warning (332060): Node: KEY[1] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register my_computer:U1|riscvsingle:rvsingle|datapath:dp|flopr:pcreg|q[0] is being clocked by KEY[1]
+    Info (13166): Register my_computer:U1|riscvsingle:rvsingle|datapath:dp|flopr:pcreg|q[4] is being clocked by KEY[1]
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
@@ -898,7 +898,7 @@ Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Warning (332060): Node: KEY[1] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register my_computer:U1|riscvsingle:rvsingle|datapath:dp|flopr:pcreg|q[0] is being clocked by KEY[1]
+    Info (13166): Register my_computer:U1|riscvsingle:rvsingle|datapath:dp|flopr:pcreg|q[4] is being clocked by KEY[1]
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332140): No fmax paths to report
 Info (332140): No Setup paths to report
@@ -913,7 +913,7 @@ Info (332146): Worst-case minimum pulse width slack is 16.000
     Info (332119):    96.000               0.000 ADC_CLK_10 
 Info: Analyzing Fast 1200mV 0C Model
 Warning (332060): Node: KEY[1] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register my_computer:U1|riscvsingle:rvsingle|datapath:dp|flopr:pcreg|q[0] is being clocked by KEY[1]
+    Info (13166): Register my_computer:U1|riscvsingle:rvsingle|datapath:dp|flopr:pcreg|q[4] is being clocked by KEY[1]
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
@@ -928,9 +928,9 @@ Info (332146): Worst-case minimum pulse width slack is 16.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4892 megabytes
-    Info: Processing ended: Mon Mar 24 18:09:09 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4898 megabytes
+    Info: Processing ended: Thu Mar 27 15:38:42 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 

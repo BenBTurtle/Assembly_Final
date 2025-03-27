@@ -80,7 +80,14 @@
 
 
 
+// Implemented instructions
 //	  xor				0110011	 100		  0000000
+//	  mul          0110011   000       0000001
+//   div          0110011   100       0000001
+//   rem          0110011   110       0000001
+//   xori 		   0010011   100       immediate
+// 
+
 
 // This part is modified by Dr.Toker
 module my_computer(input  logic        clk, reset, 
@@ -288,11 +295,11 @@ module aludec(input  logic       opb5,
 							       ALUControl = 4'b1001; //div (added instruction)  
 								  else
 									 ALUControl = 3'b100; //xor (added instruction)
-                 3'b110:    ALUControl = 3'b011; // or, ori
-                 3'b111:  if (RtypeMul)
+                 3'b110:  if (RtypeMul)
 									 ALUControl = 4'b1010;//remu (added instruction)
 								  else
-									 ALUControl = 3'b010; // and, andi
+									 ALUControl = 3'b011; // or, ori
+                 3'b111:    ALUControl = 3'b010; // and, andi
 
 					 
                  default:   ALUControl = 3'bxxx; // ???

@@ -1,5 +1,5 @@
 Flow report for CEL_PROJECT
-Thu Mar 27 16:59:18 2025
+Thu Apr  3 17:03:59 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar 27 16:59:18 2025          ;
+; Flow Status                        ; Successful - Thu Apr  3 17:03:59 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; CEL_PROJECT                                    ;
 ; Top-level Entity Name              ; CEL_PROJECT                                    ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C7G                                 ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 2,308 / 49,760 ( 5 % )                         ;
-;     Total combinational functions  ; 1,719 / 49,760 ( 3 % )                         ;
-;     Dedicated logic registers      ; 1,664 / 49,760 ( 3 % )                         ;
-; Total registers                    ; 1664                                           ;
+; Total logic elements               ; 2,559 / 49,760 ( 5 % )                         ;
+;     Total combinational functions  ; 2,040 / 49,760 ( 4 % )                         ;
+;     Dedicated logic registers      ; 1,696 / 49,760 ( 3 % )                         ;
+; Total registers                    ; 1696                                           ;
 ; Total pins                         ; 109 / 360 ( 30 % )                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                          ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/27/2025 16:58:50 ;
+; Start date & time ; 04/03/2025 17:03:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CEL_PROJECT         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 251413963147213.174310913025088        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 251413963147213.174371421319700        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; my_computer_tb                    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -107,12 +107,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4808 MB             ; 00:00:20                           ;
-; Fitter               ; 00:00:11     ; 1.5                     ; 5949 MB             ; 00:00:20                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4734 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 2.1                     ; 4893 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4653 MB             ; 00:00:01                           ;
-; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:48                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4796 MB             ; 00:00:17                           ;
+; Fitter               ; 00:00:09     ; 1.6                     ; 5961 MB             ; 00:00:18                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4726 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 2.3                     ; 4909 MB             ; 00:00:05                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4659 MB             ; 00:00:01                           ;
+; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:43                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

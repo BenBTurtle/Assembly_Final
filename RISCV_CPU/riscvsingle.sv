@@ -85,8 +85,12 @@
 //	  mul          0110011   000       0000001
 //   div          0110011   100       0000001
 //   rem          0110011   110       0000001
-//   xori 		   0010011   100       immediate
+//   sll          0010011   001       0000000
+//   xori 		   0010011   100       immediate	
+//   slli         0010011   001       immediate
 //   bne          1100011   001       immediate
+//   blt          1100011   100       immediate
+//   bge          1100011   101       immediate
 
 
 // This part is modified by Dr.Toker
@@ -204,18 +208,18 @@ module riscvsingle(input  logic        clk, reset,
                    output logic [31:0] ALUResult, WriteData,
                    input  logic [31:0] ReadData);
 
-  logic       ALUSrc, RegWrite, Jump, Zero;
+  logic       ALUSrc, RegWrite, Jump, Zero, lt;
   logic [1:0] ResultSrc, ImmSrc;
   logic [3:0] ALUControl;
 
-  controller c(Instr[6:0], Instr[14:12], Instr[25], Instr[30], Zero,
+  controller c(Instr[6:0], Instr[14:12], Instr[25], Instr[30], Zero, lt,
                ResultSrc, MemWrite, PCSrc,
                ALUSrc, RegWrite, Jump,
                ImmSrc, ALUControl);
   datapath dp(clk, reset, ResultSrc, PCSrc,
               ALUSrc, RegWrite,
               ImmSrc, ALUControl,
-              Zero, PC, Instr,
+              Zero, lt, PC, Instr,
               ALUResult, WriteData, ReadData);
 endmodule
 
@@ -224,6 +228,7 @@ module controller(input  logic [6:0] op,
 						input  logic       funct7b1, //added for multiplication and division
                   input  logic       funct7b5,
                   input  logic       Zero,
+						input  logic       lt,
                   output logic [1:0] ResultSrc,
                   output logic       MemWrite,
                   output logic       PCSrc, ALUSrc,
@@ -233,7 +238,7 @@ module controller(input  logic [6:0] op,
 
   logic [1:0] ALUOp;
   logic       Branch;
-  logic PCSrc_BEQ, PCSrc_BNE, PCSrc_JUMP;
+  logic PCSrc_BEQ, PCSrc_BNE, PCSrc_BLT, PCSrc_JUMP;
 
   maindec md(op, ResultSrc, MemWrite, Branch,
              ALUSrc, RegWrite, Jump, ImmSrc, ALUOp);
@@ -241,10 +246,12 @@ module controller(input  logic [6:0] op,
   
   assign PCSrc_JUMP = Jump; //assigns jump statement for final check
   assign PCSrc_BEQ = Branch & (funct3 == 3'b000) & Zero;
-  assign PCSrc_BNE = Branch & (funct3 == 3'b001) & ~Zero;
+  assign PCSrc_BNE = Branch & (funct3 == 3'b001) & ~Zero; //Added instruction
+  assign PCSrc_BLT = Branch & (funct3 == 3'b100) & lt; //Added instruction
+  assign PCSrc_BGE = Branch & (funct3 == 3'b101) & ~lt; //Added instruction
 
   
-  assign PCSrc = PCSrc_BEQ | PCSrc_BNE | PCSrc_JUMP;
+  assign PCSrc = PCSrc_BEQ | PCSrc_BNE | PCSrc_BLT | PCSrc_BGE | PCSrc_JUMP;
   
 endmodule
 
@@ -297,6 +304,7 @@ module aludec(input  logic       opb5,
 									 ALUControl = 4'b1000; //mul (added instruction)
 								  else
                             ALUControl = 3'b000; // add, addi
+					  3'b001:    ALUControl = 3'b110; // sll/slli
                  3'b010:    ALUControl = 3'b101; // slt, slti
 					  3'b100:  if (RtypeMul)
 							       ALUControl = 4'b1001; //div (added instruction)  
@@ -321,6 +329,7 @@ module datapath(input  logic        clk, reset,
                 input  logic [1:0]  ImmSrc,
                 input  logic [3:0]  ALUControl,
                 output logic        Zero,
+					 output logic        lt,
                 output logic [31:0] PC,
                 input  logic [31:0] Instr,
                 output logic [31:0] ALUResult, WriteData,
@@ -344,7 +353,7 @@ module datapath(input  logic        clk, reset,
 
   // ALU logic
   mux2 #(32)  srcbmux(WriteData, ImmExt, ALUSrc, SrcB);
-  alu         alu(SrcA, SrcB, ALUControl, ALUResult, Zero);
+  alu         alu(SrcA, SrcB, ALUControl, ALUResult, Zero, lt);
   mux3 #(32)  resultmux(ALUResult, ReadData, PCPlus4, ResultSrc, Result);
 endmodule
 
@@ -392,7 +401,8 @@ endmodule
 module alu(input  logic [31:0] a, b,
            input  logic [3:0]  alucontrol,
            output logic [31:0] result,
-           output logic        zero);
+           output logic        zero,
+			  output logic        lt);
 
   logic [31:0] condinvb, sum;
   logic        v;              // overflow
@@ -419,7 +429,8 @@ module alu(input  logic [31:0] a, b,
 		
       default: result = 32'bx;
     endcase
-
+	 
+  assign lt = (a<b)? 1 : 0; //less than flag for use with blt and bge
   assign zero = (result == 32'b0);
   assign v = ~(alucontrol[1] ^ a[31] ^ b[31]) & (a[31] ^ sum[31]) & isAddSub;
   

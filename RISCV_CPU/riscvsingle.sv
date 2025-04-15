@@ -86,11 +86,15 @@
 //   div          0110011   100       0000001
 //   rem          0110011   110       0000001
 //   sll          0010011   001       0000000
+//   srl				0110011   101       0000000
+//   sra          0110011   101       0100000
 //   xori 		   0010011   100       immediate	
 //   slli         0010011   001       immediate
 //   bne          1100011   001       immediate
 //   blt          1100011   100       immediate
 //   bge          1100011   101       immediate
+//   srli         001001    101       0000000 (immediate)
+//   srai         0010011   101       0100000 (immediate)
 
 
 // This part is modified by Dr.Toker
@@ -310,6 +314,10 @@ module aludec(input  logic       opb5,
 							       ALUControl = 4'b1001; //div (added instruction)  
 								  else
 									 ALUControl = 3'b100; //xor (added instruction)
+					  3'b101:  if (RtypeSub)
+					             ALUControl = 4'b1011; //sra (added instruction)
+								  else
+								    ALUControl = 3'b111; //srl (added instruction)
                  3'b110:  if (RtypeMul)
 									 ALUControl = 4'b1010;//remu (added instruction)
 								  else
@@ -426,6 +434,7 @@ module alu(input  logic [31:0] a, b,
 		4'b1000: result = a * b; //added multiplication instruction
 		4'b1001: result = a / b; //added division instruction
 		4'b1010: result = a % b; //added modulo instruction
+		4'b1011: result = $signed(a) >>> b[4:0]; //sra
 		
       default: result = 32'bx;
     endcase

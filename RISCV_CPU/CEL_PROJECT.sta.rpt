@@ -1,5 +1,5 @@
 Timing Analyzer report for CEL_PROJECT
-Mon Apr 14 16:42:11 2025
+Tue Apr 22 15:34:54 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -92,12 +92,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 2.64        ;
+; Average used               ; 3.12        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;  23.4%      ;
+;     Processors 2-8         ;  30.3%      ;
 +----------------------------+-------------+
 
 
@@ -106,7 +106,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------+--------+--------------------------+
 ; SDC File Path   ; Status ; Read at                  ;
 +-----------------+--------+--------------------------+
-; CEL_PROJECT.SDC ; OK     ; Mon Apr 14 16:42:08 2025 ;
+; CEL_PROJECT.SDC ; OK     ; Tue Apr 22 15:34:50 2025 ;
 +-----------------+--------+--------------------------+
 
 
@@ -868,7 +868,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Apr 14 16:42:07 2025
+    Info: Processing started: Tue Apr 22 15:34:49 2025
 Info: Command: quartus_sta CEL_PROJECT -c CEL_PROJECT
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -928,9 +928,9 @@ Info (332146): Worst-case minimum pulse width slack is 16.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4917 megabytes
-    Info: Processing ended: Mon Apr 14 16:42:11 2025
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 4934 megabytes
+    Info: Processing ended: Tue Apr 22 15:34:54 2025
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:13
 
 

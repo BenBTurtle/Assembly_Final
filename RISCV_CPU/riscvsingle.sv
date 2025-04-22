@@ -441,6 +441,6 @@ module alu(input  logic [31:0] a, b,
 	 
   assign lt = (a<b)? 1 : 0; //less than flag for use with blt and bge
   assign zero = (result == 32'b0);
-  assign v = ~(alucontrol[1] ^ a[31] ^ b[31]) & (a[31] ^ sum[31]) & isAddSub;
+  assign v = ~(alucontrol[0] ^ a[31] ^ b[31]) & (a[31] ^ sum[31]) & isAddSub;
   
 endmodule

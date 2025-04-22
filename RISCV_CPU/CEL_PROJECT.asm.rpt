@@ -1,5 +1,5 @@
 Assembler report for CEL_PROJECT
-Mon Apr 14 16:42:06 2025
+Tue Apr 22 15:34:48 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Apr 14 16:42:06 2025 ;
+; Assembler Status      ; Successful - Tue Apr 22 15:34:48 2025 ;
 ; Revision Name         ; CEL_PROJECT                           ;
 ; Top-level Entity Name ; CEL_PROJECT                           ;
 ; Family                ; MAX 10                                ;
@@ -67,8 +67,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+----------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                ;
 +----------------+----------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x005D80D4                                                                             ;
-; Checksum       ; 0x005D80D4                                                                             ;
+; JTAG usercode  ; 0x007A008A                                                                             ;
+; Checksum       ; 0x007A008A                                                                             ;
 +----------------+----------------------------------------------------------------------------------------+
 
 
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Apr 14 16:42:03 2025
+    Info: Processing started: Tue Apr 22 15:34:45 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off CEL_PROJECT -c CEL_PROJECT
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4749 megabytes
-    Info: Processing ended: Mon Apr 14 16:42:06 2025
+    Info: Peak virtual memory: 4761 megabytes
+    Info: Processing ended: Tue Apr 22 15:34:48 2025
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
